@@ -1,0 +1,16 @@
+#başlangıç; data, data frame imize yükleniyor. 
+
+from sklearn.datasets import load_wine
+import pandas as pd
+
+wine = load_wine(as_frame=True)
+
+# Özellikler ve hedef
+X = wine.data
+y = wine.target
+
+# Birleştirilmiş DataFrame
+df = pd.concat([X, y], axis=1)
+
+print(df.head()) 
+
