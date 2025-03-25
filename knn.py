@@ -30,6 +30,7 @@ for i in range(len(X_test)):
     y_pred.append(prediction)
 
 # Doğruluk oranını yazdır
+print("k:"k)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 
 # Confusion Matrix
