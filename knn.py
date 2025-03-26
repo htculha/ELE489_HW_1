@@ -93,7 +93,7 @@ for k in k_values:
     print(confusion_matrix(y_test, y_pred_man))
     print(classification_report(y_test, y_pred_man))
 
-# 4. Grafiği çiz
+
 plt.figure(figsize=(9, 5))
 plt.plot(k_values, euclidean_accuracies, marker='o', label='Euclidean', color='purple')
 plt.plot(k_values, manhattan_accuracies, marker='s', label='Manhattan', color='teal')
